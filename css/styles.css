@@ -1,0 +1,501 @@
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerBold.woff2') format('woff2'),
+			url('../fonts/MullerBold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerLight.woff2') format('woff2'),
+			url('../fonts/MullerLight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerMedium.woff2') format('woff2'),
+			url('../fonts/MullerMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/MullerRegular.woff2') format('woff2'),
+			url('../fonts/MullerRegular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+/*Общие*/
+html {
+	font-family: 'Muller', sans-serif;
+	background: #F1F1F1;
+}
+body {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 15px;
+}
+
+a {
+	cursor: pointer;
+}
+
+.section-heading {
+	font-size: 40px;
+	color: #333333;
+}
+
+.link-icon {
+	display: inline-block;
+}
+
+/*флекс для ссылки Подробнее*/
+.wrapper-link {
+	display: flex;
+	column-gap: 7px;
+	align-items: center;
+}
+
+/*флекс для рейтинга*/
+
+.wrapper-stars {
+	display: flex;
+	align-items: center;
+	column-gap: 44px;
+	margin-bottom: 16px;
+}
+
+
+/*header*/
+/*header-top*/
+.header {
+	margin-bottom: 70px;
+}
+
+.header-top {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.header-left {
+	display: flex;
+	align-items: center;
+}
+
+.header-logo-link {
+	margin-right: 40px;
+}
+
+.header-tel {
+	font-weight: 500;
+	font-size: 20px;
+	color: #666666;
+}
+
+.header-right {
+	margin-left: auto;
+}
+
+.header-personal-link {
+	display: flex;
+	align-items: center;
+}
+
+.header-personal-link-name {
+	margin-left: 5px;
+	font-size: 16px;
+	color: #CC9933;
+}
+
+/*header-nav*/
+
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 10px 45px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+.nav-left {
+	margin-right: 57px;
+}
+
+.nav-left-list {
+	display: flex;
+	gap: 44px;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	padding-right: 56px;
+	border-right: 1px solid #E1E1E1;
+}
+
+.nav-left-item-link {
+	font-size: 16px;
+	color: #666666;
+}
+
+.nav-right-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	column-gap: 40px;
+}
+
+.btn {
+	padding: 13px 20px;
+	border: 1px solid #CC9933;
+	border-radius: 10px;
+	font-size: 16px;
+	color: #CC9933;
+	background-color: transparent;
+}
+
+/*Main*/
+/*Offers*/
+
+.section-offers {
+	margin-bottom: 69px;
+}
+
+.heading-offers {
+	margin-bottom: 20px;
+}
+
+.wrapper-offers {
+	display: flex;
+	align-items: center;
+	column-gap: 27px;
+}
+
+/*Left part*/
+
+.section-offers-left {
+	display: flex;
+	flex-basis: 50%;
+	flex-direction: column;
+	row-gap: 23px;
+}
+
+.section-offers-left-item {
+	padding: 40px 234px 40px 40px;
+	border-radius: 15px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.offer1 {
+	background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/offer1.png');
+}
+
+.offer2 {
+	background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/offer2.png');
+}
+
+.section-offers-left-heading {
+	margin-bottom: 15px;
+	font-weight: 700;
+	font-size: 40px;
+	color: #FFFFFF;
+}
+
+.section-offers-left-price {
+	margin-bottom: 47px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #FFFFFF;
+	opacity: 0.8;
+}
+
+.section-offers-left-link {
+	font-size: 16px;
+	color: #FFCC66;
+}
+
+/*Right part*/
+.section-offers-right {
+	flex-basis: 50%;
+}
+
+.section-offers-right-item {
+	padding: 211px 234px 41px 40px;
+	border-radius: 15px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.offer3 {
+	background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/offer3.jpg');
+}
+
+.section-offers-right-heading {
+	margin-bottom: 15px;
+	font-weight: 700;
+	font-size: 60px;
+	color: #FFFFFF;
+}
+
+.section-offers-right-price {
+	margin-bottom: 47px;
+	font-size: 30px;
+	color: #FFFFFF;
+	opacity: 0.8;
+}
+
+.section-offers-right-link {
+	font-size: 16px;
+	color: #FFCC66;
+}
+
+/*About*/
+.section-about {
+	margin-bottom: 70px;
+}
+
+.about-heading {
+	margin-bottom: 11px;
+}
+
+.section-about-text {
+	margin-right: 282px;
+	font-size: 16px;
+	line-height: 32px;
+	color: #000000;
+}
+
+/*Services*/
+
+.section-services {
+	margin-bottom: 70px;
+}
+
+.services-heading {
+	margin-bottom: 20px;
+}
+
+.section-services-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 23px;
+
+}
+
+.section-services-item {
+	flex-basis: 49%;
+	padding: 191px 126px 50px 45px;
+	border-radius: 15px;
+	background-size: 100% 165px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-color: #fff;
+}
+
+.services-item-image1 {
+	background-image: url('../img/services1.png');
+}
+
+.services-item-image2 {
+	background-image: url('../img/services2.png');
+}
+
+.services-item-image3 {
+	background-image: url('../img/services3.png');
+}
+
+.services-item-image4 {
+	background-image: url('../img/services4.png');
+}
+
+.section-services-link {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 40px;
+	color: #CC9933;
+}
+
+.section-services-description {
+	font-size: 16px;
+	line-height: 32px;
+	color: #000000
+}
+
+
+/*Advantages*/
+
+.section-advantages {
+	margin-bottom: 70px;
+}
+
+.advantages-heading {
+	margin-bottom: 30px;
+}
+
+.advantages-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 23px;
+}
+
+.advantages-item {
+	flex-basis: 23.5%;
+	padding: 40px 42px 41px 45px;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+.advantages-item-icon {
+	display: inline-block;
+	margin-bottom: 10px;
+	width: 67px;
+	height: 66px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: 67px 66px;
+	background-position: left bottom;
+}
+
+.advantages-item-icon-bathtub {
+	background-image: url('../img/bathtub.svg');
+}
+
+.advantages-item-icon-hanger {
+	background-image: url('../img/hanger.svg');
+}
+
+.advantages-item-icon-heating {
+	background-image: url('../img/heating.svg');
+}
+
+.advantages-item-icon-key {
+	background-image: url('../img/hotel-key.svg');
+}
+
+.advantages-item-icon-parking {
+	background-image: url('../img/parking.svg');
+}
+
+.advantages-item-icon-reception {
+	background-image: url('../img/reception.svg');
+}
+
+.advantages-item-icon-box {
+	background-image: url('../img/security-box.svg');
+}
+
+.advantages-item-icon-pool {
+	background-image: url('../img/swimming-pool.svg');
+}
+
+.advantages-item-description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 32px;
+	color: #000000;
+}
+
+/*Placing*/
+
+.section-placing {
+	margin-bottom: 70px;
+}
+
+.placing-heading {
+	margin-bottom: 30px;
+}
+
+.section-placing-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 23px;
+}
+
+.section-placing-item {
+	flex-basis: 30.5%;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.item-description {
+	margin: 36px 45px 20px 45px;
+	font-size: 16px;
+	color: #000000;
+}
+
+.item-description-price {
+	display: flex;
+	column-gap: 4px;
+	align-items: center;
+}
+
+.item-description-price-grey {
+	color: #999999;
+}
+
+.item-description-price-strong {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.item-description-place {
+	margin-top: 16px;
+	color: #999999;
+}
+
+.btn-placing {
+	margin-left: 45px;
+	margin-bottom: 41px;
+}
+
+/*Stars*/
+
+.item-stars {
+	display: flex;
+	column-gap: 6px;
+}
+
+.active {
+	fill: #E9CE93;
+}
+.nonactive {
+	fill: #e6e6e6;
+}
+
+/*Стили последней карточки*/
+
+.section-placing-item-last {
+	border-radius: 10px;
+	background-image: url('../img/more.png');
+	background-color: #fff;
+	position: 50% 50%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.section-placing-item-last-link {
+	display: flex;
+	align-items: center;
+	column-gap: 7px;
+	padding: 373px 53px 27px 54px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 200%;
+	color: #FFFFFF;
+}
+
+
