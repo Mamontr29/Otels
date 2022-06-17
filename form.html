@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/Normalizefree.css">
+	<link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+	<section class="section-form">
+		<h2 class="section-heading form-heading">Размещение</h2>
+
+		<form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+			<div class="form-item">
+				<label class="form-item-label" for="city">Город вылета</label>
+				<select class="form-item-select" name="city" id="city">
+					<option>Санкт-Петербург</option>
+					<option>Саранск</option>
+					<option>Севастополь</option>
+					<option>Северодвинск</option>
+					<option>Симферополь</option>
+					<option>Сочи</option>
+					<option>Ставрополь</option>
+					<option>Сызрань</option>
+					<option>Сыктывкар</option>
+				</select>
+			</div>
+			<div class="form-item">
+				<label class="form-item-label" for="country">Страна</label>
+				<select class="form-item-select" name="country" id="country">
+					<option>Австралия</option>
+					<option>Австрия</option>
+					<option>Азербайджан</option>
+					<option>Албания</option>
+					<option>Англия</option>
+					<option>Аргентина</option>
+					<option>Армения</option>
+					<option>Белоруссия</option>
+					<option>Бельгия</option>
+				</select>
+			</div>
+			<div class="form-item">
+				<label class="form-item-label" for="data">Дата прибытия</label>    <!--нет каледарика в firefox -->
+				<input class="form-item-input" type="date" value="2021-10-18" name="data" id="data" required>
+			</div>
+			<div class="form-item">
+				<label class="form-item-label" for="nights">Ночей</label>
+				<input class="form-item-input" type="number" value="6" step="1" min="1" max="30" name="night" id="night" required>
+			</div>
+			<div class="form-item">
+				<label class="form-item-label" for="turists">Туристы</label>
+				<input class="form-item-input" type="number" value="2" step="1" min="1" max="30" name="turist" id="turist" required>
+			</div>
+			<button class="btn btn-form" type="submit">Найти</button>
+		</form>
+	</section>
+	
+
+
+</body>
+</html>

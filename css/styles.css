@@ -58,6 +58,16 @@ a {
 	display: inline-block;
 }
 
+.btn {
+	padding: 13px 20px;
+	border: 1px solid #CC9933;
+	border-radius: 10px;
+	font-size: 16px;
+	color: #CC9933;
+	background-color: transparent;
+}
+
+
 /*флекс для ссылки Подробнее*/
 .wrapper-link {
 	display: flex;
@@ -498,4 +508,80 @@ a {
 	color: #FFFFFF;
 }
 
+/*Form*/
+
+.section-form {
+	margin-top: 50px;			/*Убрать при переносе*/
+	margin-bottom: 70px;
+	padding: 97px 0px 71px 0px;
+	background: #E9E9E9;
+	border-radius: 15px;
+}
+
+.form-heading {
+	padding: 0px 0px 19px 40px;
+}
+
+.form {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+	padding: 28px;
+	margin: 0px 45px;
+	background: #FFFFFF;
+	border-radius: 15px;
+}
+
+.form-item {
+	display: flex;
+	row-gap: 15px;
+	flex-direction: column;
+}
+
+.form-item {
+	padding-right: 20px;
+	border-right: 1px solid grey;
+}
+
+.form-item:last-of-type {
+	padding-right: 30px;
+}
+
+.form-item-label {
+	font-size: 12px;
+	line-height: 12px;
+	color: #000000;
+}
+
+.form-item-input, .form-item-select {
+	display: block;
+	font-family: 'Muller', sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+.form-item-select {
+	min-width: 169px;
+}
+
+.form-item-input {
+	max-width: 121px;
+	min-width: 121px;
+}
+
+
+#turist, #night {
+	border-bottom: 1px solid grey;
+
+}
+
+#night::-webkit-inner-spin-button, #night::-webkit-outer-spin-button, #turist::-webkit-inner-spin-button, #turist::-webkit-outer-spin-button {
+	opacity: 1;
+}
+
+.btn-form {
+	padding: 13px 30px;
+}
 
