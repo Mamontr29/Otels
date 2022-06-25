@@ -1,3 +1,10 @@
+:root {
+	--mainGold: #CC9933;
+	--activeGold: #A47312;
+	--transitionDurationLink: .3s;
+}
+
+
 @font-face {
 	font-family: 'Muller';
 	src: url('../fonts/MullerBold.woff2') format('woff2'),
@@ -61,27 +68,27 @@ a {
 .btn {
 	display: inline-block;
 	padding: 13px 20px;
-	border: 1px solid #CC9933;
+	border: 1px solid var(--mainGold);
 	border-radius: 10px;
 	font-size: 16px;
-	color: #CC9933;
+	color: var(--mainGold);
 	background-color: transparent;
 	transition: color 1s ease, background-color 1s ease;
 }
 
 .btn:hover {
 	color: #fff;
-	background-color: #CC9933;
+	background-color: var(--mainGold);
 }
 
 .btn:focus {
 	color: #fff;
-	background-color: #CC9933;
+	background-color: var(--mainGold);
 }
 
 .btn:active {
 	color: #fff;
-	background-color: #A47312;
+	background-color: var(--activeGold);
 }
 
 
@@ -105,9 +112,21 @@ a {
 .link {
 	font-size: 16px;
 	line-height: 24px;
-	color: #CC9933;
+	color: var(--mainGold);
+	transition: color var(--transitionDurationLink) ease;
 }
 
+.link:hover {
+	color: #E9C479;
+}
+
+.link:focus {
+	color: var(--mainGold);
+}
+
+.link:active {
+	color: var(--activeGold);
+}
 
 /*header*/
 /*header-top*/
@@ -136,22 +155,22 @@ a {
 	font-size: 20px;
 	color: #666666;
 	outline: 1px solid transparent;
-	transition: color .3s ease, outline 0.3s ease, padding 0.1s ease;
+	transition: color var(--transitionDurationLink) ease, outline var(--transitionDurationLink) ease, padding 0.1s ease;
 }
 
 .header__tel:hover {
-	color: #CC9933;
+	color: var(--mainGold);
 }
 
 .header__tel:focus {
 	padding: 5px;
-	color: #CC9933;
-	outline: 1px solid #CC9933;
+	color: var(--mainGold);
+	outline: 1px solid var(--mainGold);
 }
 
 .header__tel:active {
 	outline: 1px solid transparent;
-	color: #A47312;
+	color: var(--activeGold);
 }
 
 .header__right {
@@ -161,18 +180,19 @@ a {
 .header__personal-link {
 	display: flex;
 	align-items: center;
-	font-size: 16px;
-	color: #CC9933;
-	transition: color .3s ease, fill .3s ease, padding .3s ease, outline .3s ease;
+	line-height: 16px;
+	transition: color var(--transitionDurationLink) ease, 
+		padding var(--transitionDurationLink) ease, 
+		outline var(--transitionDurationLink) ease;
 }
 
 .header__personal-icon path {
-	transition: fill .3s ease;
+	transition: fill var(--transitionDurationLink) ease;
 }
 
-.header__personal-link:hover {
+/* .header__personal-link:hover {
 	color: #E9C479;
-}
+} */
 
 .header__personal-link:hover .header__personal-icon path {
 	fill: #E9C379;
@@ -181,17 +201,17 @@ a {
 
 .header__personal-link:focus {
 	padding: 5px 9px;
-	color: #CC9933;
-	outline: 1px solid #CC9933;
+	/* color: #CC9933; */
+	outline: 1px solid var(--mainGold);
 }
 
 .header__personal-link:active {
 	outline: 1px solid transparent;
-	color: #A47312;
+	/* color: #A47312; */
 }
 
 .header__personal-link:active .header__personal-icon path {
-	fill: #CC9933;
+	fill: var(--mainGold);
 }
 
 
@@ -228,22 +248,24 @@ a {
 .header__nav__item-link {
 	font-size: 16px;
 	color: #666666;
-	transition: color .3s ease, padding .3s ease, outline .3s ease;
+	transition: color var(--transitionDurationLink) ease, 
+		padding var(--transitionDurationLink) ease, 
+		outline var(--transitionDurationLink) ease;
 }
 
 .header__nav__item-link:hover {
-	color: #CC9933;
+	color: var(--mainGold);
 }
 
 .header__nav__item-link:focus {
 	padding: 5px;
-	color: #CC9933;
-	outline: 1px solid #CC9933;
+	color: var(--mainGold);
+	outline: 1px solid var(--mainGold);
 }
 
 .header__nav__item-link:active {
 	outline: 1px solid transparent;
-	color: #A47312;
+	color: var(--activeGold);
 }
 
 .header__nav__right-list {
@@ -313,6 +335,19 @@ a {
 .section-offers-left-link {
 	font-size: 16px;
 	color: #FFCC66;
+	transition: color var(--transitionDurationLink) ease;
+}
+
+.section-offers-left-link:hover {
+	color: #FFCC66;
+}
+
+.section-offers-left-link:focus {
+	color: #FFCC66;
+}
+
+.section-offers-left-link:active {
+	color: #fff;
 }
 
 /*Right part*/
@@ -414,7 +449,20 @@ a {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 40px;
-	color: #CC9933;
+	color: var(--mainGold);
+	transition: color var(--transitionDurationLink) ease;
+}
+
+.section-services-link:hover {
+	color: #E9C479;
+}
+
+.section-services-link:active {
+	color: var(--mainGold);
+}
+
+.section-services-link:focus {
+	color: var(--activeGold);
 }
 
 .section-services-description {
@@ -560,6 +608,7 @@ a {
 .active {
 	fill: #E9CE93;
 }
+
 .nonactive {
 	fill: #e6e6e6;
 }
@@ -651,7 +700,7 @@ a {
 
 
 #turist, #night {
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #CCCCCC;
 
 }
 
@@ -803,6 +852,24 @@ a {
 	row-gap: 20px;
 	margin-left: 159px;
 }
+
+.footer-social-item path {
+	transition: fill var(--transitionDurationLink) ease;
+}
+
+.footer-social-item:hover path {
+	fill: var(--mainGold);
+}
+
+.footer-social-item:active path {
+	fill: var(--mainGold);
+}
+
+.footer-social-item:focus path {
+	fill: var(--activeGold);
+}
+
+
 
 
 
